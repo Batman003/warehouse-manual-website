@@ -1,0 +1,19 @@
+.footer {
+    background-color: #4e4747;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .footer {
+      padding: 0.5em;
+    }
+  }
+
+  footer a.disabled {
+    color: #999; /* Adjust the color to make it visually disabled */
+    pointer-events: none;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
