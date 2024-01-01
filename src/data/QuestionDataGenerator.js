@@ -92,10 +92,7 @@ const generateRandomizedQuestions = () => {
     const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   
     // Slice to get a random subset (e.g., first 10 questions)
-    const selectedQuestions = shuffledQuestions.slice(0, 10);
-    console.log("Random selectod questions:");
-    console.log(selectedQuestions);
-  
+    const selectedQuestions = shuffledQuestions.slice(0, 10);  
     return selectedQuestions;
   };
   

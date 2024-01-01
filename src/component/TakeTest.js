@@ -20,15 +20,9 @@ export function TakeTest() {
     };
 
     const handleAnswer = (questionIndex, selectedOption) => {
-      console.log("handle answer questionIndex:");
-      console.log(questionIndex);
-      console.log("handle answer selectedOption:");
-      console.log(selectedOption);
-      console.log(` ${selectedOption}`);
       setAnswers(prevAnswers => {
         // Create a new object to avoid mutating the previous state
         const newAnswers = { ...prevAnswers, [questionIndex]: selectedOption };
-        console.log("New Answers:", newAnswers);
         return newAnswers;
       });
       };
@@ -40,10 +34,8 @@ export function TakeTest() {
             isCorrect,
           };
         });
-        console.log("Result After submit: "+results);
         const correctAnswers = results.filter(result => result.isCorrect);
         const score = (correctAnswers.length / randomQuestions.length) * 100;
-        console.log("Score get: "+score);
         return { score, results };
       };
 

@@ -5,7 +5,6 @@ const QuestionCard = ({ questionIndex, question, options, onAnswer }) => {
     const [selectedOption, setSelectedOption] = useState(null);
 
     const handleOptionClick = (option) => {
-      console.log("Option clicked"+option);
       setSelectedOption(option);
       onAnswer(questionIndex, option);
     };

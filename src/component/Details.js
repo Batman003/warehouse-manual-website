@@ -4,7 +4,6 @@ import '../css/Details.css'; // Import the CSS file
 import { Link } from 'react-router-dom';
 
 const Details = ({ array, ind }) => {
-console.log(array)
 return (
     <div className="details-container">
       <h1 className="details-heading">{topic[ind]}</h1>
