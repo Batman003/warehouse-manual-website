@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../css/DetailPage.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { useLocation } from 'react-router-dom';
@@ -40,7 +40,7 @@ function DetailPage() {
   return (
     <div>
        <Header />
-       <main className="main">
+       <main className="detailpage-container">
       <div>{ui}</div>
       </main>
       <Footer />

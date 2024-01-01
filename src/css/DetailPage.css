@@ -1,0 +1,11 @@
+.detailpage-container {
+    padding: 50px;
+    margin: 10px 50px 20px 50px;
+  }
+  
+  @media (max-width: 600px) {
+    .detailpage-container {
+      padding: 10px;
+      margin: 10px 10px 10px 10px;
+    }
+  }

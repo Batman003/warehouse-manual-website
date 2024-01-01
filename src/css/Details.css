@@ -48,3 +48,28 @@
   .button:hover {
     background-color: #45a049;
   }
+
+  /* Media Query for Smaller Devices */
+@media only screen and (max-width: 600px) {
+  .details-container {
+    margin: 10px; /* Increase margin for smaller screens */
+    padding: 10px; /* Increase padding for smaller screens */
+}
+
+
+  .details-heading {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .details-list {
+      margin-left: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .details-text {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .button {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
