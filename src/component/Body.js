@@ -1,10 +1,13 @@
 import React from 'react';
 import { Rectangle } from '../component/Rectangle';
-import { topic } from './data';
 import '../css/Body.css'
-
+import { useTranslation } from 'react-i18next';
 
 export function Body() {
+
+  const [t] = useTranslation("global");
+  const topic = t("body", { returnObjects: true });
+  
 
   const generateRectangles = () => {
     return topic.map((text, index) => (
