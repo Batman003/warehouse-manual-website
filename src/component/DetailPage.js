@@ -3,14 +3,16 @@ import '../css/DetailPage.css';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { useLocation } from 'react-router-dom';
-import { vehicleDocProcedureData, tripArrivel, primaryScan,Bagging,connection,tripDispatch,otherOperational } from './data';
 import Details from './Details';
+import TranslationData from './TranslationData'
 
 function DetailPage() {
   const location = useLocation();
   const path  = location.pathname;
   const extractedDigit = extractDigitFromPath(path);
   let ui;
+
+  const {vehicleDocProcedureData,tripArrivel,primaryScan,Bagging,connection,tripDispatch,otherOperational,} = TranslationData();
 
   function extractDigitFromPath(path) {
     const match = path.match(/\/(\d+)$/);
