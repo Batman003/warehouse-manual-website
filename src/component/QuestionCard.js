@@ -11,7 +11,7 @@ const QuestionCard = ({ questionIndex, question, options, onAnswer }) => {
   
   return (
     <div className="question-card">
-      <h2>{question}</h2>
+      <h4>{question}</h4>
       <ul className="options-list">
         {options.map((option, index) => (
           <li key={index} 
